@@ -1,0 +1,25 @@
+{
+  "name": "dsh-subagent-tool-guard-probe",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Read-only probe: records how DSH identifies subagents (session header facts, preset id, tool counts per scope) without changing any tool table.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.3"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT"
+}

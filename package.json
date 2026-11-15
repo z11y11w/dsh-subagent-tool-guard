@@ -1,0 +1,49 @@
+{
+  "name": "dsh-subagent-tool-guard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Restrict subagent tool visibility to the tools its own agent preset declares; inherited global tools are removed. Main agents are untouched.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.3"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT",
+  "author": "z11y11w",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z11y11w/dsh-subagent-tool-guard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/z11y11w/dsh-subagent-tool-guard/issues"
+  },
+  "homepage": "https://github.com/z11y11w/dsh-subagent-tool-guard#readme",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "subagent",
+    "tools",
+    "security"
+  ]
+}

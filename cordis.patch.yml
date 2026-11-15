@@ -1,0 +1,19 @@
+# dsh-subagent-tool-guard 的装载行。
+#
+# 挂 profile 层：插件自己的 ctx 就是全局层，报告工具因而对主 agent 可见、
+# 对被她限制掉的子 agent 不可见（正是我们要的效果）。
+- insert:
+    - id: subagent-tool-guard
+      name: dsh-subagent-tool-guard
+      config:
+        enabled: true
+        # 这些 preset 的子 agent 不施加限制。留空 = 所有子 agent 都严格白名单。
+        skipPresets: []
+        # Team 队友在 DSH 内部同样是 subagent，默认一起限制。
+        restrictTeamMembers: true
+        # 只读工具 subagent_tool_report：主 agent 派活前自检用。
+        registerReportTool: true
+        # preset 一个工具都没声明时告警（那样子 agent 会被归零）。
+        warnOnEmptyPreset: true
+        # 每个 agent 打一行日志，排查时开。
+        verbose: false

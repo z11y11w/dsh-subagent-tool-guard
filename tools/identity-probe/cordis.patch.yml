@@ -1,0 +1,5 @@
+# 探针的装载行。它只观测、不限制，任何 agent 的工具表都不会被它改动。
+- insert:
+    - id: subagent-identity-probe
+      name: dsh-subagent-tool-guard-probe
+      config: {}

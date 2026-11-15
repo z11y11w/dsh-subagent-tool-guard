@@ -1,0 +1,11 @@
+node_modules/
+*.log
+out/
+.DS_Store
+Thumbs.db
+
+# 本机运行产物：任何"只在我这台机器上成立"的东西都不入库
+subagent-probe.jsonl
+*.local.*
+*.private.*
+.env

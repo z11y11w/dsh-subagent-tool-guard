@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" role="img" aria-label="Subagent tool guard">
+  <path d="M32 5.5 8.5 14.8v17.4c0 12.5 9.5 21.9 23.5 26.3 14-4.4 23.5-13.8 23.5-26.3V14.8L32 5.5Z" fill="#2F6FEB" fill-opacity="0.14" stroke="#2F6FEB" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M20.5 25.5h23M20.5 38.5h23" stroke="#2F6FEB" stroke-width="3" stroke-linecap="round" stroke-opacity="0.3"/>
+  <circle cx="25.5" cy="25.5" r="3.6" fill="#2F6FEB"/>
+  <circle cx="38.5" cy="38.5" r="3.6" fill="#2F6FEB"/>
+</svg>

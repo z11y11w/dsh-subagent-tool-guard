@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Subagent tool guard",
-    "description": "Keeps each subagent limited to the tools its own agent preset declares, and removes every tool it would inherit from the global layer. Main agents are left alone. Includes a read-only report tool so a parent agent can check a preset before delegating.",
+    "description": "Keeps each subagent limited to the tools its own agent preset declares, and removes every tool it would inherit from the global layer; main agents are untouched. It does not choose or change which preset a subagent runs under — tools a preset declares are kept as-is. Includes a read-only report tool so a parent agent can check a preset before delegating.",
     "detail": "docs/DETAIL.md"
   }
 }

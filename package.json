@@ -1,6 +1,6 @@
 {
   "name": "dsh-subagent-tool-guard",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Restrict subagent tool visibility to the tools its own agent preset declares; inherited global tools are removed. Main agents are untouched.",
   "type": "module",
